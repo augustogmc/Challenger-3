@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 03</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>AVALIE A SUA MENTORIA</h1>
+        <p class="p-header">Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+        <img
+          src="./assets/logo-formulário.svg"
+          alt="Uma nuvem de conversa vermelha com 3 estrelas brancas e 2 escuras"
+        />
+        <div class="top">INFORMAÇÕES PESSOAIS</div>
+      </header>
+      <form id="the-form">
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <div class="col-2">
+              <div class="input-wrapper">
+                <label for="avaliation-name">Nome</label>
+                <input type="text" id="avaliation-name" />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="avaliation-lastname">Sobrenome</label>
+                <input type="text" id="avaliation-lastname" />
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <label for="avaliation-email"
+                >Email <span>(digite um email válido)</span>
+              </label>
+              <input type="email" id="avaliation-email" required />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend class="legend">INFORMAÇÕES DO MENTOR</legend>
+
+            <div class="input-wrapper">
+              <label for="avaliation-mentor">
+                Selecione quem foi o seu mentor
+              </label>
+              <select id="avaliation-mentor">
+                <option value="Marcos">Marcos</option>
+                <option value="Neto">Lourival</option>
+                <option value="Guto">Augusto</option>
+              </select>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="avaliation-opinion">Feedback sobre o mentor</label>
+              <textarea id="avaliation-opinion"></textarea>
+            </div>
+
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="avaliation-duvidas" />
+              <label for="avaliation-duvidas"
+                >Todas as minhas dúvidas foram esclarecidas durante a mentoria.
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Agendando próxima mentoria</legend>
+            <div class="col-3">
+              <div class="input-wrapper">
+                <label for="avaliation-date"
+                  >Data <span>(DD/MM/AAAA)</span></label
+                >
+                <input type="date" id="avaliation-date" />
+              </div>
+              <div class="input-wrapper">
+                <label for="avaliation-begin">Das</label>
+                <input type="time" id="avaliation-begin" />
+              </div>
+              <div class="input-wrapper">
+                <label for="avaliation-end">Até</label>
+                <input type="time" id="avaliation-end" />
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="form-button">
+          <input type="submit" value="SALVAR" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
